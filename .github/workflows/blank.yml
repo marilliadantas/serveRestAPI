@@ -8,7 +8,8 @@ jobs:
   newman: 
       runs-on: ubuntu-latest
       steps: 
-        - uses: actions/checkout@v3
+        - name: Checkout
+        - uses: actions/checkout@v2
         
         - name: Create dir for report
           run: | 
